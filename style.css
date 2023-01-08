@@ -1,0 +1,446 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family:Helvetica,Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+header{
+    display: grid;
+    grid-template-columns: max-content  1fr;
+    padding: 26px 20px;
+     position: absolute; 
+     z-index: 5;
+     width: 100%;
+}
+ 
+header a.logo{
+    display:block;
+}
+header .logo svg{
+    
+    fill:#e50914;
+    height: 27px;
+
+}
+
+ header  div +  div{
+    text-align:right;
+} 
+header  a.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color:#e50914; 
+    color: #fff;
+    padding: 7px 17px;
+    border-radius:3px;
+    
+
+}
+header select{
+    background-color: transparent;
+    color: white;
+    padding: 6px 0 6px 20px;
+    border-radius:3px;
+}
+
+header div.select{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ header div.select svg{
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 2px;
+
+ }
+ div.splash{
+    position:relative;
+
+ } 
+ 
+ div.splash div.gridient{
+    position: absolute;
+    z-index: 1;
+    
+ background-image: linear-gradient(to top,rgba(0,0,0,.8)0,rgba(0,0,0,0)60%,rgba(0,0,0,0.8) 100%);
+ position: absolute; 
+inset:0;
+}
+ div.splash div.background{
+  position:absolute;
+  z-index:1; 
+}
+
+
+ div.splash div.background img{
+     max-width:100%; 
+     opacity: 0.6;
+    
+
+ }
+ div.splash div.contain{
+  padding-top:95px;
+  margin-bottom:95px;
+   max-width: 655px; 
+   position: absolute; 
+   inset: 0;
+       left:50%;
+      margin-left:-327.5px;   
+    display:grid;
+    align-items:center;
+    text-align:center;
+     position:relative; 
+     z-index:3; 
+    
+
+ }
+ 
+ 
+ div.splash h1,div.splash h2,div.splash h3{
+    font-weight: normal;
+ }
+ 
+  div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+ }
+ div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+ }
+ div.splash h3{
+    font-size: 1.2rem;
+ } 
+
+
+
+
+ div.cta form{
+    position: relative;
+     display:grid; 
+    
+    margin:20px;
+     
+    grid-template-columns:1fr max-content; 
+
+
+ }
+ 
+ div.cta input{
+    padding:15px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+ }
+ div.cta input ~ span{
+    position:absolute;
+    left:12px;
+    top:19px;
+    z-index:3;
+    color:#aaa;
+    transition:all 0.3s ease;
+    pointer-events: none;
+ }
+ div.cta input:focus{
+    padding-top:19px;
+    padding-bottom:11px;
+ }
+  div.cta input:focus ~span{
+    top: 4px;
+    font-size:.8rem;
+  }
+  div.cta button{
+    font-size: 1.625rem;
+    padding: 5px 16px;
+    background-color: #e50914;
+    border-radius:2px;
+    color: #fff;
+    border: 0;
+  }
+  
+  section{
+    display: grid;
+     grid-template-columns: 1fr 1fr ;
+     gap:36px;  
+  padding:70px 35px;
+    align-items:center;
+      border-top: 8px solid #222; 
+    text-align:center;
+    
+  
+
+  }
+  
+   section.last{
+    border-bottom:8px solid #222;
+  }
+  section div.texts h1{
+    font-size:3.125rem;
+     margin-bottom:8px; 
+     margin-top:55px; 
+
+  }
+  
+  section div.texts p{
+    font-size:1.625rem;
+    
+  }
+  
+
+.media{
+  margin-top:35%;
+    position:relative;
+} 
+
+  .media.s1 img{
+    width: 750px;
+
+  }
+  .media.s1 video{
+   
+   width:53%;  
+    position:absolute; 
+    
+    top:30%;  
+    left:22%;
+     }
+
+   section:nth-child(even) div.texts{
+    order:2;
+
+  } 
+  
+  section div.download{
+    border: 2px solid #888;
+    border-radius:15px;
+    padding:10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 280px;
+    left: 50%;
+    margin-left: -140px;
+    background-color: #000;
+    gap: 15px;
+    grid-template-columns:max-content 1fr max-content;
+
+  }
+  section div.download img{
+    height:75px;
+     width:auto;  
+    
+  }
+  .media.s3 img{
+    width:400px;
+    position: relative;
+    z-index: 5;
+  }
+ 
+  .media.s3 video{
+       width:293px;   
+      width:54%;
+       position:absolute;
+    top:29px;
+     left:150px; 
+     bottom:20px;  
+  }
+ 
+
+
+  div.faq{
+    padding: 70px 30px;
+  }
+  div.faq h1{
+    font-size: 3.625rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+ 
+  div.question{
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 1rem;  
+
+  }
+
+ 
+   div.question{
+    position:relative;
+    background-color: #303033;
+    margin-bottom:10px; 
+  
+  } 
+  
+  div.question svg{
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top:20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+    
+  }
+  div.question .header{
+    display: block;
+    padding: 20px 30px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  div.question div.answers{
+    padding:  0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    margin: 2px;
+  }
+  div.question input[type="checkbox"]{
+    display: none;
+  }
+  div.question input[type="checkbox"]:checked~div.answers{
+    padding: 30px 30px;
+    max-height: 600px;
+  }
+  div.question input[type="checkbox"]:checked~.header  svg label{
+    transform: rotate(180deg);
+
+  }
+  div.faq h3{
+    font-weight: normal;
+    text-align: center;
+     margin: 40px 0 20px; 
+
+  }
+  div.faq form{
+    max-width: 625px;
+    margin: 0 auto;
+  
+  }
+  div.faq form div+div{
+    text-align: center;
+  }
+  .lastsection{
+    display:flex;
+    margin:10px;
+  
+    
+  }
+  ul{
+   
+    display: flex ;
+    margin-left:125px;
+    background-color:black;
+    color:#737373;
+   
+    
+  }
+  ul li{
+    font-family:Netflix Sans,Helvetica Neue,Helvetica,Arial,sans-serif ;
+
+    line-height:1.55rem;
+    
+    list-style-type: none;
+    padding:2px;
+    
+    
+    
+    
+  }
+  .call:hover{
+    text-decoration: underline;
+    
+    
+  }
+  
+  .svg svg{
+    position:absolute;
+    top: 40px;
+    left: 70px;
+
+  }
+  .message li{
+    position: relative;
+    right:250px;
+    top: 40px;
+  }
+ 
+  .value{
+    border: 2px solid rgb(40, 37, 37);
+    position: relative;
+    right:180px;
+    top: 60px;  
+    background-color: #000;
+    color: white;
+    width:100px;
+  }
+  svg{
+    width:12px;
+    right: 30px;
+  }
+   
+   
+   /* STSRT */
+   .unlist{
+    display: flex;
+    flex-wrap: wrap;
+     gap:1.0rem; 
+    
+
+
+
+}
+.unlist li{
+    width: 190px;
+    list-style: none;
+    cursor: pointer;
+     
+    
+}
+.unlist li:hover{
+    text-decoration: underline; 
+   
+    
+}
+#doo{
+    margin: 0px 135px;
+    
+}
+a{
+  text-decoration:none;
+  
+
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+.main-section{
+    margin: 30px 123px;
+    width: 15vw;
+    height: 8vh;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 2px 2px 2px 2px;
+}
+.lastline{
+    margin: 25px 118px;
+}
+
+   /* ENDING */
+
+
+  
+  
